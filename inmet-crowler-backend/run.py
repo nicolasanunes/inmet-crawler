@@ -2,6 +2,9 @@ import uvicorn
 from dotenv import load_dotenv
 import os
 
+# Carrega as variáveis do arquivo .env
+load_dotenv()
+
 if __name__ == "__main__":
     uvicorn.run(
         "app.main:app",
